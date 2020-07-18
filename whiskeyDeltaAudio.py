@@ -88,6 +88,12 @@ def writeVectorAsAudio(r, d, filename):
     sp.io.wavfile.write(filename+".wav", r, d)
 
 def whiskeyDeltaAudio(filepath, wvlt, outFile):
+    """
+    This function implements a wavelet decomposition method in order to elimiate noise from audio files.
+    :param filepath: File path of signal to be de noised
+    :param wvlt: wavelet to be used
+    :param outFile: desired name of output file
+    """
     r, d = readAudioFileAsVector(filepath)
     wavelet = wvlt
     dKnot = singleChan(d)
