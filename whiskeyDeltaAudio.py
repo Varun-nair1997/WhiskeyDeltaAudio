@@ -101,5 +101,5 @@ def whiskeyDeltaAudio(filepath, wvlt, outFile):
     writeVectorAsAudio(r, cleaned * 1000, outFile)
 
 if __name__ == '__main__':
-    whiskeyDeltaAudio("/Users/varunnair/Desktop/Official/audioDNS/audioDenoise/PyFiles/cleanedFileStructure/noisyTester.wav", 'haar', 'cleaned')
+    whiskeyDeltaAudio('filePathHere', 'waveletNameHere', 'OutputFileNameHere')
     exit()
